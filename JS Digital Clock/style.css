@@ -1,7 +1,10 @@
 body {
     background-image: url(images/girl-with-minion-shirt.jpg);
     background-repeat: no-repeat;
-    background-size: 100vmax;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #FB8C00;
+    /* background: rgb(251,140,0, .) */
 }
 .container {
     display: flex;
@@ -23,8 +26,9 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color: #0D47A1;
+    color: #000;
     font-size: 60px;
     font-family: Orbitron;
     letter-spacing: 7px;
+    background-color: #fff
 }
