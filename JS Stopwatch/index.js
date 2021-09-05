@@ -7,11 +7,15 @@ window.onload = function () {
     let buttonStart = document.getElementById("start");
     let buttonStop = document.getElementById("stop");
     let buttonReset = document.getElementById("reset");
+    const img = document.querySelector('img')
     let Interval;
+    let rotateImg;
+    let rotation = 0;
 
     buttonStart.onclick = function () {
         clearInterval(Interval);
         Interval = setInterval(startTimer, 10);
+        rotateImg = setInterval(rotate, 1000);
     }
 
     buttonStop.onclick = function () {
@@ -25,6 +29,8 @@ window.onload = function () {
         appendTens.innerHTML = tens;
         appendSenconds.innerHTML = seconds;
     }
+
+    
 
     function startTimer () {
         tens++;
@@ -48,6 +54,10 @@ window.onload = function () {
         if (seconds > 9) {
             appendSenconds.innerHTML = seconds;
         }
+    }
+    function rotate() {
+        rotation += 90;
+        img.style.transform = `rotate(${rotation}deg)`;
     }
 
 }
