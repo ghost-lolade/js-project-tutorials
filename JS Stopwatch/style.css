@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 /* Variables */
 /* Mixin's */
 body {
@@ -5,32 +6,39 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue";
   height: 100%;
 }
-
 .container {
   display: flex;
 }
-
 .wrapper {
   flex: 1;
-  margin: 30px auto;
+  margin: 20px;
   color: #fff;
   text-align: center;
+  height: 65vh;
+  width: 45%;
 }
-
-img.wrapper {
-  max-width: 10%;
-  height: auto;
+.img-wrapper {
+  width: 50%;
+  height: 90vh;
+}
+img {
+  width: 100%;
+  height: 75%;
   object-fit: contain;
+  transition: 1s ease-in-out;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Roboto", san-serif;
   font-weight: 100;
   font-size: 2.6em;
   text-transform: uppercase;
 }
 
-#seconds, #tens {
+#seconds,
+#tens {
   font-size: 2em;
 }
 
