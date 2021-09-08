@@ -62,8 +62,8 @@ for (let i = 0; i < operator.length; i++) {
             // if first key pressed is an operator, don't do anything
             console.log("enter a number");
         } else {
-            // // else just add the operator pressed to the input
-            // input.innerHTML += e.target.innerHTML;
+            // else just add the operator pressed to the input
+            input.innerHTML += e.target.innerHTML;
         }
     });
 }
