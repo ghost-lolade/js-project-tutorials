@@ -62,13 +62,16 @@ for (let i = 0; i < operator.length; i++) {
             // if first key pressed is an operator, don't do anything
             console.log("enter a number");
         } else {
-            // else just add the operator pressed to the input
-            input.innerHTML += e.target.innerHTML;
+            // // else just add the operator pressed to the input
+            // input.innerHTML += e.target.innerHTML;
         }
     });
 }
 
 // on click of 'equal to button'
 result.addEventListener("click", function() {
+    // this is the string that we will be processing eg. -10+26+33-56*34/23
+  var inputString = input.innerHTML;
+
     
 });
