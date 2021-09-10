@@ -26,5 +26,20 @@ function showTime () {
     setTimeout(showTime, 1000);
 
 }
-
 showTime();
+
+let images = ["url(images/img1.jpg)", "url(images/img2.jpg)", "url(images/img3.jpg)", "url(images/img4.jpg)", "url(images/img5.jpg)", "url(images/img6.jpg)", "url(images/img7.jpg)", "url(images/img8.jpg)", "url(images/img9.jpg)"]
+
+const body = document.querySelector("body")
+
+let currentImg = 0
+function changeImg() {
+    body.style.backgroundImage = images[currentImg];
+    if(currentImg < images.length - 1){
+        currentImg++;
+    }else{
+        currentImg = 0;
+    }
+}
+let show = setInterval(changeImg, 1000)
+changeImg();
