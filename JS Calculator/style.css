@@ -38,7 +38,7 @@ body {
 .operators div {
     display: inline-block;
     border: 1px solid #bbb;
-    width: 80px;
+    width: 78px;
     text-align: center;
     padding: 10px;
     margin: 20px 4px 10px 0;
@@ -90,7 +90,7 @@ div.equal {
     display: inline-block;
     border: 1px solid #3079ED;
     border-radius: 1px;
-    width: 17%;
+    width: 15%;
     text-align: center;
     padding: 127px 10px;
     margin: 10px 6px 10px 0;
